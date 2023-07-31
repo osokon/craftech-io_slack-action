@@ -92,18 +92,6 @@ function generateSlackMessage(text) {
                         "value": github.context.ref,
                         "short": true
                     },                   
-                ],
-                "actions": [ 
-                    {
-                       "type": "button",
-                       "text": "Commit", 
-                       "url": `https://github.com/${owner}/${repo}/commit/${sha}` 
-                    },
-                    {
-                       "type": "button",
-                       "text": "Action Tab",
-                       "url": `https://github.com/${owner}/${repo}/commit/${sha}/checks` 
-                    }                
                 ]               
             }
         ]
